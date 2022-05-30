@@ -1,11 +1,9 @@
 package com.ayty.course.resources;
 
 import java.util.List;
-
 import com.ayty.course.entities.Product;
-import com.ayty.course.entities.User;
 import com.ayty.course.services.ProductService;
-import com.ayty.course.services.UserService;
+
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -33,5 +31,4 @@ public class ProductResource {
         Product obj = service.findById(id);
         return ResponseEntity.ok().body(obj);
     }
-
 }
